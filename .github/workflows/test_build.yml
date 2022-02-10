@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         dnf --nogpgcheck -y groupinstall "Development Tools"
-        dnf --nogpgcheck -y install autoconf automake openssl-devel pcre-devel zlib-devel systemd-devel make findutils pcre2-devel mariadb-connector-c-devel libevent-devel libcurl-devel libxml2-devel net-snmp-devel libssh2-devel OpenIPMI-devel unixODBC-devel openldap-devel 
+        dnf --nogpgcheck -y install autoconf automake openssl-devel pcre-devel zlib-devel systemd-devel make findutils pcre2-devel mariadb-connector-c-devel libevent-devel libcurl-devel libxml2-devel net-snmp-devel libssh2-devel OpenIPMI-devel unixODBC-devel openldap-devel golang
     - name: Code checkout
       uses: actions/checkout@v2
     - name: Generate configure
