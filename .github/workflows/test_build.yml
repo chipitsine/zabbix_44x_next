@@ -10,8 +10,8 @@ jobs:
       CC: gcc
       CFLAGS: -fanalyzer
     runs-on: ubuntu-latest
-      container:
-        image: fedora:rawhide
+    container:
+      image: fedora:rawhide
     steps:
     - name: Install dependencies
       run: |
